@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+        <a href="./form.html">Form</a>
+      </nav>
+    </header>
+    <main>
+        <form method="POST" action="http://localhost:3000/profile">
+            <div>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name">
+              </div>
+            <br>
+            <div>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name">
+              </div>
+            <br>
+              <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </div>
+            <br>
+              <div>
+                <label for="interests">Interests:</label>
+                <input type="checkbox" id="interest1" name="interests" value="interest1">
+                <label for="interest1">Interest 1</label>
+                <input type="checkbox" id="interest2" name="interests" value="interest2">
+                <label for="interest2">Interest 2</label>
+                <input type="checkbox" id="interest3" name="interests" value="interest3">
+                <label for="interest3">Interest 3</label>
+              </div>
+              <div>
+                <br>
+                <label for="State">State:</label>
+                <select id="State" name="State">
+                  <option value="NSW">NSW</option>
+                  <option value="Victoria">Victoria</option>
+                  <option value="Queensland">Queensland</option>
+                  <option value="Tasmania">Tasmania</option>
+                </select>
+              </div>
+              <br>
+              <button type="submit">Submit form</button>
+        </form>
+    </main>
+    <br>
+    <footer>Copyright 2021 &copy;</footer>
+  </body>
+</html>
